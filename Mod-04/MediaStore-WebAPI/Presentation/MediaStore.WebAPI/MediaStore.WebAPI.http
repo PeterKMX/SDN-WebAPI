@@ -1,0 +1,36 @@
+@HostAddr = https://localhost:7131
+
+### 1. create 1st book
+POST {{HostAddr}}/api/books
+Content-Type: application/json
+
+{"id":0,"title":"Effective C#","year":2014}
+
+### 2. create 2nd book
+POST {{HostAddr}}/api/books
+Content-Type: application/json
+
+{"id":0,"title":"PHP 8","year":2018}
+
+### 3. read all books
+GET {{HostAddr}}/api/books
+Accept: application/json
+
+### 4. read book nr 2
+GET {{HostAddr}}/api/books/2
+Accept: application/json
+
+### 5. post 3rd book
+POST {{HostAddr}}/api/books
+Content-Type: application/json
+
+{ "id": 0, "title": "GRPC in C#","year": 2017 }
+
+### 6. update 3rd book 
+PUT {{HostAddr}}/api/books/3
+Content-Type: application/json
+
+{ "id": 3, "title": "GRPC using C#","year": 2019 }
+
+### 7. delete 3rd book
+DELETE {{HostAddr}}/api/books/3
