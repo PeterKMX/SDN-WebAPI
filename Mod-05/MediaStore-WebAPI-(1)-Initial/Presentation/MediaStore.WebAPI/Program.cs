@@ -1,6 +1,6 @@
 /* Training SDN-WebAPI 
    Module 05 MediaStore WebAPI project
-   - This is an initial version of the project showing the TODO list
+   - This is an initial version of the project
    TODO
    [1] Extend the model by adding more tables in Core Models
    [2] Add Value Objects by including them in entities having Id
